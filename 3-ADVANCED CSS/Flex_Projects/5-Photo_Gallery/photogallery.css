@@ -1,0 +1,21 @@
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+}
+.box{
+    padding: 6px;
+    opacity:0.9;
+   
+    
+    
+
+}
+.box:hover{
+    opacity: 1;
+    transition: 0.9s;
+    
+    
+}
+

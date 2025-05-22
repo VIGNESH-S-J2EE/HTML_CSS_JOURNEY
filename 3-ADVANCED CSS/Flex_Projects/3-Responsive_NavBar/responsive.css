@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*  And this design are the univesal to common to all the content */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+/* this type are the navbar are style the desgin */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* padding and margin are used to better space to all so it used to design a logo*/
+
+.logo{
+    font-size: larger;
+    font-weight: bolder;
+    margin: 13px;
+    padding: 12px;
+}
+
+/* style the navbar-link ul */
+
+.navbar-links ul{
+    display: flex;
+
+}
+
+/* style the navbar-link ul li to remove a style type and any used a style*/
+.navbar-links ul li{
+    list-style-type:none;
+}
+
+/* style the navbar-link ul li a to design link to attractive */
+.navbar-links ul li a{
+                color: aliceblue;
+                text-decoration: none;
+                padding: 16px;
+                display: block;
+
+}
+/* style the navbar-link ul li :hover are design */
+.navbar-links ul li:hover{
+        background-color: #34495e;
+}
+
+/* they are create a responsive website or webpage to be used
+some button to be type html page*/
+.btn{
+     /* the bg-color are give only for testing purpose--bg-color:red;*/
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    width: 30px;
+    height: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* design a bar to show a attractive webpage*/
+
+.bar{
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+}
+
+/*the miracle are the start
+ because a magic used a @media screen used a max-width:give some pixels and come a magic*/
+
+ @media (max-width:500px) {
+     .btn{
+        display: flex;
+     }
+     .navbar-links{
+        display: none;
+        width: 100%;
+       
+     }
+
+     .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+     }
+     .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+     }
+
+     .navbar-links ul li{
+        text-align: center;
+     }
+     .navbar-links.active{
+        display: flex;
+     }
+ }

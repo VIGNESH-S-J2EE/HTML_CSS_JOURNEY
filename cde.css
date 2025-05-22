@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.example {
+    border: 4px solid black;
+
+}
+
+.flex-box {
+    color: red;
+    font-size: 19px;
+    padding: 15px;
+    text-align: center;
+}
+
+.box-1 {
+    background-color: #1abc9c;
+}
+
+.box-2 {
+    background-color: #3498db;
+}
+
+.box-3 {
+    background-color: #2ecc71;
+}
+
+.box-4 {
+    background-color: #9b59b6;
+}
+
+.box-5 {
+    background-color: #34495e;
+}
+
+.box-6 {
+    background-color: #2980b9;
+}
+
+.box-7 {
+    background-color: #e74c3c;
+}
+
+.box-8 {
+    background-color: #1abc9c;
+}
+.box-9 {
+    background-color: #d35400;
+}
+
+.box-10{
+    background-color: #2c3e50;
+}
+
+
+/*----------------------------------------*/
+
+/*dispaly:flex      they are start with the Display:flex are used */
+
+/*.example{
+    display:inline-flex;
+    display:flex;
+    flex-direction: row; /*row are the default
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+
+/*----------------------------------------*/
+ 
+
+
+/*  flex-wrap    they are start with flex:wrap the are used
+.example{ 
+    /*display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  nowrap is a default one
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;*/
+
+    /*height: 389px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+
+}*/
+
+/*----------------------------------------*/
+
+/*flex-flow  */
+
+/*.example {
+    display: flex;
+    default flex-direction,flex-wrap
+    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    flex-flow: row wrap-reverse;
+
+    height: 390px;
+    flex-flow:column nowrap;
+    flex-flow: column wrap;
+    flex-flow: column wrap-reverse;
+}*/
+
+
+/*----------------------------------------*/
+
+/*Gap  
+
+.example{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 19px;
+    row-gap: 19px;
+    gap: 40px 20px;
+    gap:60px;
+
+}*/
+
+/*----------------------------------------*/
+
+/*justify content are the main axis alignment row main axis =>X,column main axis =>Y
+
+.example{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 800px;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+}*/
+
+/*----------------------------------------*/
+
+/*align-item=> cross axis alignment
+  row cross axis => Y
+  column cross axis =>x
+.example{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+
+
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+    
+}
+
+.box-1{
+    font-size: 34px;
+
+}*/
+
+
+/*.example
+{
+    display:flex;
+    flex-direction:column;
+    height:400px;
+    align-items:stretch;
+    align-items:flex-start;
+    align-items:flex-end;
+    align-items:center;
+    align-items:baseline;
+}*/
+
+/*.example{
+    display: flex;
+
+}
+
+.box-1{
+    order:0;
+}
+
+.box-2{
+    order: 2;
+}
+
+.box-3{
+    order: 3;
+}
+
+.box-4{
+    order: 5;
+}
+
+
+.example {
+    display: flex;
+
+}
+
+.box-1 {
+    flex-grow: 1;
+}
+
+.flex-box {
+    flex-shrink:0 ;
+}*/
+
+
+/*.example {
+    display: flex;
+
+}
+
+.flex-box{
+    flex-basis: auto;
+}
+
+.box-1{
+    flex-basis: 500px;
+    flex-grow: 1;
+}*/
+
+/* flex-grow,flex-shrink,flex-basis */
+/* give a one value are called the flex-grow,flex-basis (% px)*/
+/* flex-grow , flex shrink*
+
+.box-1
+{
+    flex: 10 10 auto;
+    flex: 0 1 100px;
+
+}*/
+
+
+.example{
+    display: flex;
+    height: 550px;
+    flex-direction: column;
+    align-items:stretch;
+
+}
+
+.box-1{
+    align-self: auto;
+
+}
+
+.box-2{
+    align-self: flex-start;
+}
+
+.box-3 {
+    align-self: flex-end;
+}
+
+.box-4 {
+    align-self: center;
+}
+
+.box-5 {
+    align-self: stretch;
+}
+

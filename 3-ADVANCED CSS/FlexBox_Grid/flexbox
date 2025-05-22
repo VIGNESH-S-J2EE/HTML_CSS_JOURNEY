@@ -1,0 +1,78 @@
+Horizontal and Vertical lines:-
+
+    It contains a two axis are used too like a graph method
+
+               => y-axis are the Vertical lines and X-axis are the Horizontal lines
+
+Flex box:-
+        The Flexbox are working a Single Dimensional such as a working with a y-axis or x-axis.
+
+Grid System:-
+        THe Grid System are the Working a two Dimensional Such as a Working with a Y-axis and also
+        working with X-aixs.
+ 
+
+what is Flexbox?
+
+* css Flexbox is also called as flexible box.
+* flexbox is a one dimensional layout maodel.
+* using Flexbox we can design flexible and efficient layout and align and distribute space among items in a container.
+
+The Flexible Box Layout Module,makes it easier to design flexible responsive layout structure without using float or positioning.
+
+Flexbox is alternative for all the css properties to display: flex box.
+
+            * Display:inline;
+            * Display:block;
+            * Display:inline-block;
+
+Advantage of Flexbox:-
+
+    *it is a simple solution for vertical Centering.
+
+    *it can easily change the order of element without changing its order.
+
+    *Increase productivity.
+
+    *It's Supported in all major Browsers.
+
+    *it simplifies in all major browsers.
+
+    *it simplifies complexity.
+
+
+CSS Flex Container Properties:-
+
+    *dispaly
+    
+    *flex-direction
+
+    *flex-wrap
+
+    *flex-flow
+
+    *column-gap
+
+    *row-gap
+
+    *gap
+
+    *justify-content
+
+    *align-items
+
+    *align-content
+
+CSS Flex Item Properties:-
+
+    *order
+
+    *flex-grow
+
+    *flex-shrink
+
+    *flex-basis
+
+    *flex
+
+    *align-self
