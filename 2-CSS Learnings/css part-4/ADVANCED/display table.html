@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table {
+            margin-top: 100px;
+            /* it will be top to move slightly down on given px*/
+            margin-left: 100px;
+            display: table;
+            /* then it display give table 
+            it understand this is a table so create at start*/
+            width: 600px;
+
+        }
+
+        .row {
+            /* row act as a "tr"*/
+            display: table-row;
+        }
+
+        .col {
+            /* col act as a "td"*/
+            display: table-cell;
+            /* the table colmn are not show output
+            but show the table-cell*/
+            border: 1px solid orange;
+            padding: 20px 50px;
+        }
+
+        .header {
+            /* act as a thead*/
+            /* any time you must give only 
+            for display item give a last of the content*/
+            font-weight: bold;
+            color: orangered;
+            text-align: center;
+            display: table-header-group
+                /* the table not arrange but you 
+            arrange order table used on the method of
+            "display: table-header-group"*/
+        }
+
+        .footer {
+            /* it act as a tfooter*/
+            display: table-footer-group
+        }
+
+        .caption {
+            display: table-caption;
+            text-align: center;
+            font-weight: bold;
+            color: orangered;
+            padding: 10px;
+        }
+        .col-group{ /* colgroup*/
+            display:table-column-group;
+        }
+        .tbl-col{ /* col */
+                display: table-column;
+        }
+        .col4{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+<!--
+                                   Name: S.vignesh
+                                   Date: March 28 , 2024
+                                   Time: 11:40:00 AM 
+                                                                       -->
+    <!-- row group are used-->
+    <div class="table">
+        <!-- create a new header on table and very useful for 
+         style-->
+        <div class="caption"> student details</div>
+        <div class="col-group">
+            <div class="tbl-col">col-1</div>
+            <div class="tbl-col col4">col-2</div>
+            <div class="tbl-col">col-3</div>
+        </div>
+
+        <div class="header">
+
+            <div class="row">
+                <div class="col">Name</div>
+                <div class="col">Age</div>
+                <div class="col">City</div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col">ram</div>
+            <div class="col">25</div>
+            <div class="col">chennai</div>
+        </div>
+        <div class="row">
+            <div class="col">ramu</div>
+            <div class="col">20</div>
+            <div class="col">ooty</div>
+        </div>
+        <div class="row">
+            <div class="col">raja</div>
+            <div class="col">30</div>
+            <div class="col">assam</div>
+        </div>
+        <div class="row">
+            <div class="col">samir</div>
+            <div class="col">30</div>
+            <div class="col">delhi</div>
+        </div>
+        <div class="footer">
+
+            <div class="row">
+                <div class="col">total</div>
+                <div class="col">col-1</div>
+                <div class="col">4</div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

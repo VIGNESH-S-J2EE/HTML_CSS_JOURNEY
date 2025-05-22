@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            /* it convert a box or original table*/
+        }
+        table tr:nth-of-type(even){
+            background: blue;
+        }
+        table td:nth-of-type(even){
+            background: aqua;
+        }
+        tfoot{
+            text-align: center;
+        }
+    </style> 
+</head>
+
+<body>
+
+                        <!--
+                            Name: S.vignesh
+                            Date: Jan 24 , 2024
+                            Time: 10:09:00 PM 
+                        -->
+
+    <h1>display table in css</h1>
+
+    <table width="100%" border="1px" cellpadding="10px" cellspacing="10px">
+
+        <!-- table width = " 100%" it give 100% to cover a full screen-->
+
+        <caption>student details</caption>
+      
+        <!-- colgroups are used to the create column and style are used
+         to a width and etc,-->
+         <colgroup>
+            <col style="width: 100px;">
+            <col style="width: 50px;">
+            <col style="width: 50px;">
+         </colgroup>
+
+        <thead> <!-- not change a output 
+            it only for broweser understand reasons-->
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody><!-- it also similar to the thead tbody not change a output 
+            browser understand and used for style purpose-->
+            <tr>
+                <td>Ram</td>
+                <td>12</td>
+                <td>chennai</td>
+            </tr>
+            <tr>
+                <td>Rama</td>
+                <td>15</td>
+                <td>mumbai</td>
+            </tr>
+            <tr>
+                <td>Raja</td>
+                <td>20</td>
+                <td rowspan="2">delhi</td>
+            </tr>
+            <tr>
+                <td>samir</td>
+                <td>25</td>
+                
+            </tr>
+<!-- two words are same it will remove second same word
+ and type first same word on rowspan property-->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">macbook
+
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

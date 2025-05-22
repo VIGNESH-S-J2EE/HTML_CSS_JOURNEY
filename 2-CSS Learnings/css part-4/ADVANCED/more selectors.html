@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #box >p{    /* it is a box >p style's are the 
+                        box >p access only a child*/
+        /*color: red;
+        }*/
+
+        /* it is a box >p style's are the 
+                        box >p access only a child*/
+
+        #box+p {
+            /* div or class or id + p - + adjacent to the next p tag to be color or other
+                         things are change or accessed*/
+            color: red;
+        }
+
+        /* it will be separately to split 
+            the content to be used a "div[class]" "div[id]"*/
+
+        div[class] {
+            background: blueviolet;
+        }
+
+        div[id] {
+            background: yellow;
+        }
+
+        /* and also give the particular attribute or class or div
+        */
+        div[class="class"] {
+            background-color: brown;
+        }
+        /*class are similar to another class are 
+        used one assign to isuue on similar class
+        so solve this used on (~)tilled symbol*/
+          div[class~=class] {
+            background: blueviolet;
+        }
+        .txt{
+          color: chartreuse;
+        }
+
+        /* design with a tag*/
+        a[title="link-1"]{
+            color:teal
+        }
+        a[href="4--bg-clip.html"]{
+                    color:gold
+        }
+        /* power symbol are used 
+        eg test.png are more file name start with 
+        test.png to be used "a[href^=test.png]" to change or accessed more similar file name
+        at one line coding*/
+        /* it also "a[href$="#"]" the dollar symbol are used 
+        ending content of the # will be access*/ 
+    </style>
+</head>
+
+<body>
+<!--
+                                   Name: S.vignesh
+                                   Date: March 29 , 2024
+                                   Time: 06:33:00 AM 
+                                                                       -->
+    <h1>more selectors</h1>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi minus modi eligendi cum, repudiandae
+            laborum vero, architecto corrupti minima qui distinctio, molestias eveniet dolorum earum odit culpa
+            voluptatum perspiciatis tempore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi minus modi eligendi cum, repudiandae
+            laborum vero, architecto corrupti minima qui distinctio, molestias eveniet dolorum earum odit culpa
+            voluptatum perspiciatis tempore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi minus modi eligendi cum, repudiandae
+            laborum vero, architecto corrupti minima qui distinctio, molestias eveniet dolorum earum odit culpa
+            voluptatum perspiciatis tempore.</p>
+
+        <div class="class">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, vitae qui nam, consectetur
+                dignissimos
+                est totam iusto quidem nulla voluptate quisquam excepturi. Omnis, consequuntur fuga earum accusamus
+                assumenda fugit incidunt?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, vitae qui nam, consectetur
+                dignissimos
+                est totam iusto quidem nulla voluptate quisquam excepturi. Omnis, consequuntur fuga earum accusamus
+                assumenda fugit incidunt?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, vitae qui nam, consectetur
+                dignissimos
+                est totam iusto quidem nulla voluptate quisquam excepturi. Omnis, consequuntur fuga earum accusamus
+                assumenda fugit incidunt?</p>
+        </div>
+        <div class="class txt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nobis rerum eligendi quisquam? Laudantium,
+                nesciunt facere. Quod fugiat, quaerat molestiae deleniti, inventore animi accusamus quas repellat facere
+                dolores aliquid a. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nobis rerum eligendi quisquam? Laudantium,
+                nesciunt facere. Quod fugiat, quaerat molestiae deleniti, inventore animi accusamus quas repellat facere
+                dolores aliquid a.</p>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, vitae qui nam, consectetur dignissimos
+        est totam iusto quidem nulla voluptate quisquam excepturi. Omnis, consequuntur fuga earum accusamus
+        assumenda fugit incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, vitae qui nam, consectetur dignissimos
+        est totam iusto quidem nulla voluptate quisquam excepturi. Omnis, consequuntur fuga earum accusamus
+        assumenda fugit incidunt?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, vitae qui nam, consectetur dignissimos
+        est totam iusto quidem nulla voluptate quisquam excepturi. Omnis, consequuntur fuga earum accusamus
+        assumenda fugit incidunt?</p>
+<a href="4--bg-clip.html" title="link-1">link-1</a>
+<a href="6--bg-blend.html" title="link-2">link-2</a>
+<a href="#" title="link-3">link-3</a>
+<a href="9--list properties.html" title="link-4">link-4</a>
+
+
+</body>
+
+</html>

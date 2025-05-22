@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--  percentage are used
+    <style>
+      .parent{
+        width: 400px;
+        height: 400px;
+        background-color: red;
+      }
+
+      .child{
+        height: 50%;
+        width: 50%;
+        background-color: blue;
+      }
+    </style>
+</head>
+<body>
+    percentage are used
+
+    <div class="parent">
+      <class="child">
+        mac
+      </div>
+    </div> -->
+    
+    <!-- then start a "em"-->
+
+   <!-- then it is a em style
+    <style>
+      .parent{
+        font-size: 5px;
+      }
+      .relative{
+            font-size: 2em;
+      }
+      .absolute{
+            font-size: 32px;
+      }
+     </style>-->
+
+     <!-- then start rem-->
+      <style>
+        /* it work on the html and also used browser default root*/
+        html{
+          font-size: 20px;
+        }
+        .parent {
+          font-size: 5px;
+        }
+      
+        .relative {
+          font-size: 2rem; /* it is browser default or html are the root*/
+        }
+      
+        .absolute {
+          font-size: 32px;
+        }
+      </style>
+
+</head>
+<body>
+  <!--
+                                               Name: S.vignesh
+                                               Date: Feb 2 , 2024
+                                               Time: 06:46:00 PM 
+                                                                                      -->
+    <!-- em - it is similar to the percentage because,
+     it is relative and parent denpends on (em)
+     
+     defaultly [1 em = 16px browser default size]
+     
+     1em = base value 16px * 1=> 16px
+     2em = base value 16px * 2=> 32px 
+     
+     And the method of em the browser user to change the size ona browser 
+     it changing a em value 
+     
+     then em work also parent and decimal point also give-->
+   
+     <!-- <div class="parent">
+     <h3 class="relative">
+      macbook -R
+    </div>
+    </h3>
+     <h3 class="absolute">
+      macbook -A
+    </h3> -->
+
+    <!-- then start the "rem" - root em-->
+
+    <div class="parent">
+      <h3 class="relative">
+        macbook -R
+    </div>
+    </h3>
+    <h3 class="absolute">
+      macbook -A
+    </h3>
+
+
+
+</body>
+</html>
+
+<!--
+px
+%
+em
+rem
+vw
+vh
+vmax
+vmin
+
+Absolute Units  -> screen to be constantly set
+  cm  centimeters
+  mm  multimeters
+  in  inches
+  px  pixels
+  pt  points
+  pc  picas
+
+Relative Uints  -> one parent style to be work on the units
+  em  
+  rem  realtive em
+  ch
+  ex
+  vw   viewport width
+  vh   viewport height
+  vmax viewport maximum
+  vmin viewport minimum
+  %    percentage
+
+
+-->

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1 :is(h2, h3, h4){
+            color: blue;
+        }
+
+        :is(#d1,#d2) h2{
+                color: blueviolet;
+        }    
+        :is(#d1,#d2) p{
+                color: red;
+        }
+          :is(#d1,#d2) :is(h2,p){
+                color: darkgreen;
+        }
+
+         :is(#d1,#d2) h2:hover{
+            color: chartreuse;
+         }
+
+    </style>
+</head>
+
+<body>
+<!--
+                                   Name: S.vignesh
+                                   Date: March 28 , 2024
+                                   Time: 06:33:00 PM 
+                                                                       -->
+    <h1>:is() PSA</h1>
+    <div id="d1">
+        <h2>h2-heading one</h2>
+        <h3>h3- sub heading-1</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate a nostrum exercitationem in nemo
+            praesentium illum optio molestias facilis magnam.</p>
+
+        <h4>H4- sub heading-2</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nam sunt iusto id eveniet nostrum
+            perspiciatis pariatur autem quod deserunt?</p>
+    </div>
+    <hr>
+    <div id="d2">
+        <h2>h2-heading two</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cum modi deleniti provident
+            exercitationem voluptatibus, doloremque animi quas quaerat. Ad.</p>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod rem quidem delectus fugit possimus ipsum ea
+        adipisci! Error, quos saepe!</p>
+</body>
+
+</html>

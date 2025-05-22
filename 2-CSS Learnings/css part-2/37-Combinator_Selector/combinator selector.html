@@ -1,0 +1,126 @@
+<!--2.combinators selectors
+* descendent
+* direct child
+* adjacent sibling
+* general sibling-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators selectors</title>
+
+    <head>
+        <style>
+            /* general sibling it is very important one used for responsive method
+            and symbol for tiled symbol(~) it means a current element to the not used only used for 
+            a another element */
+
+            .box~.box2{
+                color: blue;
+            }
+
+            /* used a direct child are accessed to use ">" it used to selects
+            .box>p {
+                color: red;
+
+            }
+
+             adjacent sibling slecrors div or any after to element to be select using just "+"
+            #game+p{
+                color: chartreuse;
+            }
+                */
+        </style>
+    </head>
+
+<body>
+    <!--
+                                         Name: S.vignesh
+                                         Date: Feb 6 , 2024
+                                         Time: 07:46:00 PM 
+                                                                                          -->
+    <h1>general sibling</h1>
+   
+    <div class="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sint dolorum tempora nihil fugiat aut
+            doloremque officia, dicta consequuntur cupiditate quaerat quos consequatur saepe, impedit et provident
+            minima. Hic, ratione.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sint dolorum tempora nihil fugiat aut
+            doloremque officia, dicta consequuntur cupiditate quaerat quos consequatur saepe, impedit et provident
+            minima. Hic, ratione.</p>
+    </div>
+   
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sint dolorum tempora nihil fugiat aut
+        doloremque officia, dicta consequuntur cupiditate quaerat quos consequatur saepe, impedit et provident
+        minima. Hic, ratione.</p>
+   
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sint dolorum tempora nihil fugiat aut
+        doloremque officia, dicta consequuntur cupiditate quaerat quos consequatur saepe, impedit et provident
+        minima. Hic, ratione.</p>
+   
+        <div class="box2">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur sint dolorum tempora nihil fugiat aut
+            doloremque officia, dicta consequuntur cupiditate quaerat quos consequatur saepe, impedit et provident
+            minima. Hic, ratione.</p>
+    </div>
+</body>
+
+
+</html>
+
+
+<!-- it is  a descendent combinators selectors
+    <style>
+        .box p{
+            color: red;
+
+        }
+        .box p span{
+            color: blue;
+            font-weight: bolder;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius a, sit hic cupiditate accusamus mollitia
+            libero ipsum obcaecati eveniet quas cum quos maiores sunt modi quia expedita! Recusandae, quibusdam impedit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, <span>adipisicing elit. Minima officia iusto, tempore, maxime vitae libero
+            optio ea, cum necessitatibus nam assumenda esse alias ab commodi.</span>
+        </p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam earum quaerat, distinctio quo quis magni sint
+    voluptate, dicta est ut repellat deserunt doloremque possimus accusamus nihil dolore dignissimos iste fuga?</p>-->
+
+<!-- to start a direct child-->
+<!-- <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius a, sit hic cupiditate accusamus mollitia
+            libero ipsum obcaecati eveniet quas cum quos maiores sunt modi quia expedita! Recusandae, quibusdam impedit.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, <span>adipisicing elit. Minima officia iusto, tempore, maxime vitae
+                libero
+                optio ea, cum necessitatibus nam assumenda esse alias ab commodi.</span>
+        </p>
+        <div class="inner-box">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, cumque. Quibusdam totam, repellat nam
+                vitae, illum, doloribus quae reprehenderit minus esse dolorem possimus sint? Consequuntur? </p>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam earum quaerat, distinctio quo quis magni sint
+        voluptate, dicta est ut repellat deserunt doloremque possimus accusamus nihil dolore dignissimos iste fuga?</p>
+
+    <div id="game"> </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea unde harum voluptatum neque officia tempora
+            eaque nihil. Sint, illo provident velit vel aliquid similique dolorem eos amet expedita dignissimos? Nemo!
+        </p> -->
+
+
+
+</html>

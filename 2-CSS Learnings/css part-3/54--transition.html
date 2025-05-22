@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            /* the transition are used to the  super page are created and used the 
+            tansition - property*/
+            
+            /* the transition property are gived in one line
+
+            transition-property: width,height,background;
+            transition-duration: 0.6s ,0.6s,1s; 
+            transition-timing-function: ease-in-out;*/
+
+            /* transition-property:all;
+            transition-duration: 0.6s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.4s;*/
+
+            border: 6px solid black;
+
+            /*transition: all 0.5s ease-in 1s;*/
+
+            /* the see about a steps are used*/
+
+            transition-property:all;
+            transition-duration: 2s;
+            transition-timing-function: steps(9);
+            transition-delay: 0.1s;
+
+
+
+        }
+        div:hover{
+            width: 400px;
+            height: 400px;
+            background: gold;
+            border: 6px dotted darkred;
+        }
+        /* cubic are used to the websearch om cubic-bezier*/
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

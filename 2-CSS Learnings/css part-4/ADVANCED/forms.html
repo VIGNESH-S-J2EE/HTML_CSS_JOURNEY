@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt:focus{
+            outline: none;
+            border: 1px solid green;
+            border-radius: 2px;
+        }
+        input[type="checkbox"]:checked{
+            box-shadow: 0 0 0 3px red;
+        }
+        input[type="text"]:enabled{
+            background-color: chartreuse;
+        }
+
+         input[type="text"]:disabled{
+            background-color: rgb(216, 238, 20);
+        }
+
+         input[type="text"]:required{
+            background-color: blue;
+        }
+
+        input[type="email"]:read-only{
+            background-color: brown;
+        }
+
+         input[type="email"]:read-write{
+            background-color: plum;
+        }
+        input[type="text"]:valid{
+            
+            border-color: green;
+        }
+
+          input[type="text"]:invalid{
+            border-color: rgb(255, 6, 6);
+        }
+
+          input[type='radio']::selection{
+            box-shadow:red;
+        }
+
+        option:default{
+           color: darkblue;  
+        }
+    </style>
+</head>
+<body>
+<!--
+                                   Name: S.vignesh
+                                   Date: March 30 , 2024
+                                   Time: 10:00:00 AM 
+                                                                       -->
+    <h1>form css pseudo class selector </h1>
+
+    <span>:focus</span>
+    <input type="text" id="txt">
+    <hr>
+    <!-- the checkbox are used responsive navbar create to used-->
+    <span>:checkbox</span>
+    
+    <input type="checkbox" id="football">
+    <label for="football">football</label>
+
+    <input type="checkbox" id="volleyball">
+    <label for="volleyball">volleyball</label>
+    
+    <input type="checkbox" id="tennisball">
+    <label for="tennisball">tennisball</label>
+
+    <hr>
+    <span>:enabled :disabled :required : optional</span> <br>
+    <input type="text"> <br>
+    <input type="text"  disabled> <br>
+    <input type="text"  required> <br>
+ <hr>
+ <span>:read-only | :read-write</span>
+ <input type="email">
+ <input type="email" readonly>
+<hr>
+
+<span>:valid| :invalid</span>
+<input type="text" placeholder="enter username" pattern="[a-z]*">
+
+<hr>
+<span>:default</span>
+<input type="radio" name="gender" id="male" checked>
+<label for="male">male</label>
+<input type="radio" name="gender" id="female">
+<label for="female">female</label>
+<hr>
+<select>
+    <option value="">select</option>
+    <option value="C">C</option>
+    <option value="C++">C++</option>
+    <option value="python" selected>python</option>
+</select>
+</body>
+</html>

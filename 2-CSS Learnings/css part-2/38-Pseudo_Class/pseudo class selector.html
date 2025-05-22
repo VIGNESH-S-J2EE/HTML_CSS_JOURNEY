@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class in css</title>
+    <style>
+        /* then, create a new type of theme to be ready so used the :root 
+        then store a root variable use a var() 
+        
+        the basically ":root pseudo class" are the common to the all 
+        basic to set one used all of type*/ 
+        :root{
+            --background-color:aliceblue;
+            --color:red;
+        }
+        h1{
+            color:var(--color)
+        }
+        p{
+            padding: 10px;
+            background-color:var(--background-color);
+            color:var(--color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+                                               Name: S.vignesh
+                                               Date: Feb 7 , 2024
+                                               Time: 06:46:00 AM 
+                                                                                          -->
+    <h1>root pseudo selector</h1>
+    <!-- it is very useful css selector - any values are store the variable and access all style-->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, amet similique nisi rerum atque officia
+        asperiores. Magnam tempora dicta velit fuga modi mollitia illo quo tempore magni, amet vitae minima accusamus
+        impedit, fugit hic. Id et, esse dolores odio, doloremque voluptates culpa aliquid aspernatur dignissimos iusto
+        voluptate vitae, laudantium facilis? Soluta quos veniam odit? Consequatur, dolorum? Atque autem quisquam culpa
+        libero eius quibusdam, laudantium quidem voluptates mollitia ut reprehenderit, velit consequuntur eveniet non
+        qui error nihil distinctio corrupti, dicta quas sed! Ab, nisi. Soluta placeat iure, voluptatum rerum eos, velit
+        accusamus beatae minus, quod obcaecati aliquid blanditiis voluptatibus tempore illo.</p>
+</body>
+
+</html>

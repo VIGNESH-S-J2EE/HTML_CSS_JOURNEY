@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #list-1 li:first-child {
+            color: blue;
+        }
+
+        li:first-child {
+            color: brown;
+        }
+
+        li:last-child {
+            color: grey;
+        }
+        p:first-child{ /* it work only for the parent inside a child element */
+            color: blue;
+        }
+        p:last-child{
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+        <!--
+                                                       Name: S.vignesh
+                                                       Date: Feb 7 , 2024
+                                                       Time: 08:56:00 PM 
+                                                                                                  -->
+    <h2>
+        pseudo class in css |first-child| last-child
+    </h2>
+
+    <ul id="list-1">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ad? -1</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet.-6</li>
+    </ul>
+
+    <ul id="list-2">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet. -1</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, amet.-6</li>
+    </ul>
+<div>
+    <p> <b>Lorem ipsum dolor -1</b> sit amet consectetur adipisicing elit. Facilis iste, similique reprehenderit temporibus omnis,
+        eligendi placeat quas quod quaerat alias pariatur eum sapiente! Illo totam eligendi sequi fuga, nemo rem.</p>
+
+    <p> <b>Lorem ipsum dolor -2</b> sit amet consectetur adipisicing elit. Facilis iste, similique reprehenderit temporibus
+        omnis,
+        eligendi placeat quas quod quaerat alias pariatur eum sapiente! Illo totam eligendi sequi fuga, nemo rem.</p>
+    
+    <p> <b>Lorem ipsum dolor -3</b> sit amet consectetur adipisicing elit. Facilis iste, similique reprehenderit temporibus
+        omnis,
+        eligendi placeat quas quod quaerat alias pariatur eum sapiente! Illo totam eligendi sequi fuga, nemo rem.</p>
+</div>
+</body>
+
+</html>

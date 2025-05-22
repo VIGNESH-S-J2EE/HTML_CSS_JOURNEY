@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 800px;
+            height: 500px;
+            background: lightgray;
+            position: relative;
+        }
+        .box div{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+        }
+        .box-1{
+            background-color: teal;
+            color: white;
+            top: 100px;
+            left: 45px;
+            z-index: 4;             /* the z-index are give high number
+                                        it show the first priority
+                                    And the give negative value are assign it definitely
+                                    go last of view*/ 
+        }
+         .box-2{
+            background-color: orangered;
+            color: white;
+            top: 150px;
+            left: 95px;
+            z-index: 1;
+        }
+         .box-3{
+            background-color: purple;
+            color: white;
+            top: 250px;
+            left: 150px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--
+                                             Name: S.vignesh
+                                             Date: Jan 25 , 2024
+                                             Time: 03:56:00 PM 
+                                                                                    -->
+    <h1>Z-index in css</h1>
+    <div class="box"> <!-- In these class="box" are the parent-->
+        <div class="box-1">box-1</div>
+        <div class="box-2">box-2</div> <!-- these three box are the child-->
+        <div class="box-3">box-3</div>
+    </div>
+</body>
+</html>

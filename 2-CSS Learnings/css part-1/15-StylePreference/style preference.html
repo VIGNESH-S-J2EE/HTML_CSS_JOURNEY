@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* anyone to be give an !important to break the rules*/
+        #box p {
+            color: red;
+        }
+
+        /* it will be overwrite a content of the last content */
+        .test {
+            color: goldenrod;
+        }
+
+        p{
+            color: green !important;
+        }
+
+        /* first preference-id
+           second prefernce-class
+           third prefernce-element*/
+    </style>
+</head>
+
+<body>
+
+                                <!--
+                                     Name: S.vignesh
+                                     Date: Jan 25 , 2024
+                                     Time: 11:02:00 AM 
+                                -->
+
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, vitae iure. Nulla fugiat cumque rerum
+        tempora, veniam neque perferendis corporis, nisi ipsa aut nobis, porro nostrum non repudiandae rem atque?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, vitae iure. Nulla fugiat cumque rerum
+        tempora, veniam neque perferendis corporis, nisi ipsa aut nobis, porro nostrum non repudiandae rem atque?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, vitae iure. Nulla fugiat cumque rerum
+        tempora, veniam neque perferendis corporis, nisi ipsa aut nobis, porro nostrum non repudiandae rem atque?</p>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet distinctio expedita, omnis rem quaerat eos
+            molestiae sunt, dolor ducimus unde quidem natus fuga praesentium nihil ipsum, sint nam nulla? Asperiores!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sunt ipsam voluptate mollitia neque
+            ipsa, dolore reprehenderit ut. Sit omnis et blanditiis voluptatibus optio hic minus voluptatem explicabo
+            sint. Id.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto sit dolor similique,
+            dicta, assumenda
+            iusto explicabo facere voluptate sed provident neque laborum harum quod voluptatum enim illo, sequi placeat
+            libero?</p>
+        <p class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto sit dolor similique,
+            dicta, assumenda
+            iusto explicabo facere voluptate sed provident neque laborum harum quod voluptatum enim illo, sequi placeat
+            libero?</p>
+    </div>
+</body>
+ 
+
+</html>

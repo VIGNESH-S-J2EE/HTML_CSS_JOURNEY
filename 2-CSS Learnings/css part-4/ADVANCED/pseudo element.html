@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input::placeholder{
+            color: orchid;
+        }
+        p::selection{
+            background-color: black;
+            color: white;
+        }
+        p::first-letter{
+            font-weight: bolder;
+            font-size: 18px;
+            color: blue;
+        }
+        p::first-line{
+            color: aquamarine;
+        }
+        /* learn a ::after and ::before*/
+        .box{
+            background-color: red;
+            color: red;
+            width: 200px;
+            height: 100px;
+            position: relative;
+        }
+        .box::before{
+            content: ''; /*must give a content on the used ::before and ::after so, give atleast a content: ''; this like*/
+            width: 100%;
+            height: 10px;
+            background-color: darkgreen;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        .box::after{
+            content: ''; /*must give a content on the used ::before and ::after so, give atleast a content: ''; this like*/
+            width: 100%;
+            height: 10px;
+            background-color: darkgreen;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+<!--
+                                   Name: S.vignesh
+                                   Date: March 29 , 2024
+                                   Time: 08:30:00 PM 
+                                                                       -->
+    <!-- it learn about a placeholder-->
+    <h1>pseudo elements using "::" | pseudo class are used ":" </h1>
+
+    <div class="box">pseudo elements</div>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque rerum adipisci ipsum quas, eum aut
+            doloremque iusto nihil aperiam! orem ipsum dolor sit amet consectetur adipisicing elit. Qui atque rerum adipisci ipsum quas, eum aut
+            doloremque iusto nihil aperiam!</p>
+    
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque rerum adipisci ipsum quas, eum aut
+            doloremque iusto nihil aperiam!</p>
+   
+
+
+
+        <input type="text" placeholder="Enter The Name">
+    
+</body>
+
+</html>
+
+<!-- 
+
+it is very important topic and useful to all the programs
+       ::before
+       ::after
+       ::first-letter
+       ::firsr-line
+       ::selection
+       ::placeholder
+-->
